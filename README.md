@@ -1,3 +1,4 @@
 # BTSH
 Simple limux shell
-[Download install file](https://github.com/FAATER/btsh/blob/master/install.sh)
+[Download Installer](https://github.com/FAATER/btsh/raw/master/install.sh)
+
