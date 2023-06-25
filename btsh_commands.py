@@ -9,18 +9,6 @@ COLOR_EXECUTABLE = "\033[1;32m"  # Verde brillante
 COLOR_FILE = "\033[0;36m"  # Cian para archivos (extensiones generales)
 
 version = "alpha 1"
-help_command = (
-    "version | see version app\n"
-    "clear | clear history console\n"
-    "info | check info app\n"
-    "exit | exit app\n"
-    "ext_command | execute external commands\n"
-    "ls | see files on directory\n"
-    "help | see help\n"
-)
-
-def mt_version():
-    print(version)
 
 def cd(directory):
     try:
@@ -37,21 +25,12 @@ def cd(directory):
     except Exception as e:
         print(f"An error occurred: {str(e)}")
 
-def mt_help():
-    print(help_command)
 
 def clear():
     os.system("clear")
 
-def info():
-    print("MultiOs Terminal version Prototype\nJune 4 2023")
-
 def exit_app():
     sys.exit()
-
-def ext_command():
-    exte_command = input("Please enter external command >> ")
-    os.system(exte_command)
 
 def ls():
     files = os.listdir()
@@ -82,4 +61,4 @@ def check_command(arg1):
         os.system("/bin/"+primera_palabra+" "+resto_cadena)
 
 if __name__ == "__main__":
-    print("Please open: multios-terminal.py")
+    print("Please open main file")
